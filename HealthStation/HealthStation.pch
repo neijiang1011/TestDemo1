@@ -1,0 +1,45 @@
+//
+//  HealthStation.pch
+//  HealthStation
+//
+//  Created by mobile manager on 16/12/19.
+//  Copyright © 2016年 Changhong. All rights reserved.
+//
+
+#ifndef HealthStation_pch
+#define HealthStation_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "SDAutoLayout.h"
+#import "Masonry.h"
+#import "XHToast.h"
+#import "MBProgressHUD.h"
+#import "MedicineBoxNetMethod.h"
+#import "TypeJudge.h"
+
+#define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define UIColorFromHex(s) [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
+
+
+/*各个机型的缩放比例*/
+#define IPhone4SWidthScaling 320.f/1080.f
+#define IPhone4SHeightScaling 480.f/1920.f
+#define IPhone5SWidthScaling 320.f/1080.f
+#define IPhone5SHeightScaling 568.f/1920.f
+#define IPhone6WidthScaling 375.f/1080.f
+#define IPhone6HeightScaling 667.f/1920.f
+#define IPhone6PWidthScaling 412.f/1080.f
+#define IPhone6PHeightScaling 736.f/1920.f //实际缩放为1080*1920
+
+#define type4S 0
+#define type5S 1
+#define type6 2
+#define type6P 3
+
+
+#endif /* HealthStation_pch */

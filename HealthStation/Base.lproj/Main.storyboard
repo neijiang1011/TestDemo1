@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hZb-Sw-JGY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Medical Navigator View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MedicalNavigatorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gFQ-nb-QeF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3015.1999999999998" y="-390.85457271364322"/>
+        </scene>
+        <!--Little Health Station View Controller-->
+        <scene sceneID="5Bt-zn-20j">
+            <objects>
+                <viewController id="AfQ-WZ-RI6" customClass="LittleHealthStationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gT6-Q6-UGr"/>
+                        <viewControllerLayoutGuide type="bottom" id="MkX-1o-jhm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bt2-YQ-nOG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KXg-lm-Xoy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9W-yb-c5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3015.1999999999998" y="325.18740629685158"/>
+        </scene>
+        <!--Personal Center View Controller-->
+        <scene sceneID="aQq-b3-9ja">
+            <objects>
+                <viewController id="lbH-3C-4gU" customClass="PersonalCenterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1xP-Wl-vz5"/>
+                        <viewControllerLayoutGuide type="bottom" id="bpY-Am-FsQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P1l-13-nQG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TBP-6q-h8r"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5h5-bx-XAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2928.8000000000002" y="1104.1979010494754"/>
+        </scene>
+        <!--My Tabbar Controller-->
+        <scene sceneID="bqF-1F-svb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hZb-Sw-JGY" customClass="MyTabbarController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="dBW-ha-CI0"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="1nf-AU-Vua">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Lbg-Zr-0Dz" kind="relationship" relationship="viewControllers" id="0fD-Vu-Otg"/>
+                        <segue destination="Coc-uE-apX" kind="relationship" relationship="viewControllers" id="Mss-eX-Kub"/>
+                        <segue destination="I53-pZ-te3" kind="relationship" relationship="viewControllers" id="HJT-1S-PxS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOi-LK-GJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="246" y="412"/>
+        </scene>
+        <!--医疗导航-->
+        <scene sceneID="5oF-pj-Iqr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lbg-Zr-0Dz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="医疗导航" image="医疗导航-未选中" selectedImage="医疗导航-选中" id="pFA-Ai-0MW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="61s-KS-73u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fzI-Fc-hDl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoG-ir-9jZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="-390.85457271364322"/>
+        </scene>
+        <!--健康小站-->
+        <scene sceneID="2Ez-Vv-BGV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Coc-uE-apX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="健康小站" image="tab健康小站-未选中" selectedImage="健康小站-选中" id="jkg-49-4eV"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wgd-R7-sFg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AfQ-WZ-RI6" kind="relationship" relationship="rootViewController" id="aCQ-VU-kd4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dr0-ag-yi7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="325.18740629685158"/>
+        </scene>
+        <!--个人中心-->
+        <scene sceneID="agS-j3-FFj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I53-pZ-te3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人中心" image="个人中心-未选中" selectedImage="个人中心-选中" id="l3p-T3-8Q4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ix9-CB-uEl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lbH-3C-4gU" kind="relationship" relationship="rootViewController" id="8xd-kQ-gva"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIq-OG-sZZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.5999999999999" y="1104.1979010494754"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab健康小站-未选中" width="24" height="24"/>
+        <image name="个人中心-未选中" width="24" height="24"/>
+        <image name="个人中心-选中" width="24" height="24"/>
+        <image name="健康小站-选中" width="24" height="24"/>
+        <image name="医疗导航-未选中" width="24" height="24"/>
+        <image name="医疗导航-选中" width="24" height="24"/>
+    </resources>
+</document>
